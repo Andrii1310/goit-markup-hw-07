@@ -831,13 +831,13 @@ img {
 
 /* Works portfolio */
 /* Создание сетки секции portfolio */
-.work-list {
+.example-work__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
 }
-.work-item {
+.example-work__item {
   width: calc((100% - 30px * 3) / 3);
   height: 404px;
   margin-left: 30px;
@@ -846,21 +846,21 @@ img {
   background-color: var(--primary-bg-color);
   border: 1px solid var(--border-image-color);
 }
-.work-link {
+.example-work__link {
 }
 /* Создание overlay на карточку */
-.work-thumb {
+.example-work__thumb {
   position: relative;
   overflow: hidden;
 }
-.work-link:hover .work-overlay,
-.work-link:focus .work-overlay {
+.example-work__link:hover .example-work__overlay,
+.example-work__link:focus .example-work__overlay {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.work-img {
+.example-work__img {
 }
-.work-overlay {
+.example-work__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -896,8 +896,8 @@ img {
   line-height: 1.88;
   color: var(--primary-text-color);
 }
-.work-item:hover,
-.work-item:focus {
+.example-work__item:hover,
+.example-work__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
