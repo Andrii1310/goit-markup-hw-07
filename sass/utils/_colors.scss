@@ -7,16 +7,19 @@
 // Первичный цвет фона background: #FFFFFF;
 // Вторичный цвет фона background: #2F303A;
 // Цвет фона секции "Наша команда" background: #F5F4FA;
-:root {
-  --primary-text-color: #757575;
-  --accent-text-color: rgba(255, 255, 255, 0.6);
-  --title-text-color: #212121;
-  --primary-link-color: #2196f3;
-  --accent-link-color: #188ce8;
-  --primary-bg-color: #ffffff;
-  --accent-bg-color: #2f303a;
-  --accent-bg-second-color: #f5f4fa;
-  --accent-bgi-color: #c4c4c4;
-  --primary-icon-color: #afb1b8;
-  --border-image-color: #eeeeee;
+$colors: (
+  'primary-text': #757575,
+  'accent-text': rgba(255, 255, 255, 0.6),
+  'secondary-text': #212121,
+  'primary-link': #2196f3,
+  'accent-link': #188ce8,
+  'primary-bg': #ffffff,
+  'accent-bg': #2f303a,
+  'secondary-bg': #f5f4fa,
+  'border': #eeeeee,
+  'primary-icon': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
 }

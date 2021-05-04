@@ -17,6 +17,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--title-text-color);
+  color: getColor('secondary-text');
   text-transform: uppercase;
 }

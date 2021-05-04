@@ -5,7 +5,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--accent-bg-color);
+  background-color: getColor('accent-bg');
   background-image: linear-gradient(
       to left,
       rgb(47, 48, 58, 0.4),
