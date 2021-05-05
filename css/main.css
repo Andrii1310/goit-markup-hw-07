@@ -867,6 +867,7 @@ img {
 .header-section {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-page {
@@ -1031,7 +1032,7 @@ img {
   margin-bottom: 30px;
   background-size: cover;
   background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  border: 1px solid;
 }
 .example-work__item:hover, .example-work__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
